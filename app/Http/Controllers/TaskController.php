@@ -91,4 +91,10 @@ class TaskController extends Controller
         $task->save();
         return redirect('/tasks');
     }
+
+    public function delete(Task $task)
+    {
+        $task->delete();
+        return redirect('/tasks');
+    }
 }
